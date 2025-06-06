@@ -34,7 +34,6 @@
 │   │   │   └── rust.lua
 │   │   └── init.lua
 │   └── stylua.toml
-├── nvim-structure.md
 ├── pack
 │   └── plugins
 │       └── start
