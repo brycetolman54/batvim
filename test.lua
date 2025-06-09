@@ -2,23 +2,23 @@ vim.cmd('echom " >^.^<"')
 
 -- commands
 vim.api.nvim_create_autocmd({ "BufEnter", "FileType" }, {
-	callback = function()
-		local fo = vim.opt_local.formatoptions:append("t")
-	end,
-})
+  callback = function()
+    local fo = vim.opt_local.formatoptions:append("t")
+  end,
+}) -- add t to options for wrapping
 vim.api.nvim_create_autocmd("BufReadPost", {
-	callback = function()
-		local mark = vim.api.nvim_buf_get_mark(0, '"')
-		local lcount = vim.api.nvim_buf_line_count(0)
-		if mark[1] > 0 and mark[1] <= lcount then
-			vim.api.nvim_win_set_cursor(0, mark)
-		end
-	end,
-})
+  callback = function()
+    local mark = vim.api.nvim_buf_get_mark(0, '"')
+    local lcount = vim.api.nvim_buf_line_count(0)
+    if mark[1] > 0 and mark[1] <= lcount then
+      vim.api.nvim_win_set_cursor(0, mark)
+    end
+  end,
+}) -- open file to previous location when closed
 
 -- wrap options
 vim.opt.wrap = true -- allow wrapping
-vim.opt.textwidth = 150 -- break only at 150 characters long
+vim.opt.textwidth = 150 -- break only at 150 char long
 vim.opt.linebreak = true -- break only between words
 
 -- number options
@@ -68,31 +68,36 @@ vim.opt.signcolumn = yes -- always show the sign column left of numbers
 vim.opt.fillchars:append({ eob = " " }) -- char to use for lines after buffer
 vim.opt.list = true -- shows whitespace characters
 vim.opt.listchars = {
-	space = "·",
-	eol = ".",
-	trail = "~",
-	extends = ">",
-	precedes = "<",
+  space = "·",
+  eol = ".",
+  trail = "~",
+  extends = ">",
+  precedes = "<",
 }
 
 -- folding
 vim.opt.foldmethod = "syntax" -- fold based on indents
 vim.opt.foldcolumn = "1" -- show foldmarkers in the sign column
 vim.opt.fillchars:append({
-	fold = " ",
-	foldopen = "▾",
-	foldclose = "▸",
+  fold = " ",
+  foldopen = "▾",
+  foldclose = "▸",
 }) -- chars to use for the fold sign column
 vim.opt.foldminlines = 3 -- min lines to start a fold
 vim.opt.foldnestmax = 5 -- max depth of nested folds
 vim.opt.foldlevelstart = 2 -- fold level showing upon opening a file
 vim.opt.foldtext = "v:lua.my_fold_text()" -- text to show a collapsed fold
 function _G.my_fold_text()
-	local start_line = vim.fn.getline(vim.v.foldstart)
-	local end_line = vim.v.foldend - vim.v.foldstart + 1
-	return start_line .. "  <- " .. end_line .. " lines ->"
+  local start_line = vim.fn.getline(vim.v.foldstart)
+  local end_line = vim.v.foldend - vim.v.foldstart + 1
+  return start_line .. "  <- " .. end_line .. " lines ->"
 end
 
 -- mappings
-vim.keymap.set("n", "-", "ddp")
-vim.keymap.set("n", "_", "ddkP")
+vim.keymap.set("n", "<leader>-", "ddp", { noremap = true, desc = "move line down" })
+vim.keymap.set("n", "<leader>_", "ddkP", { noremap = true, desc = "move line up" })
+vim.keymap.set("i", "<c-u>", "<esc>viwUi", { noremap = true, desc = "uppercase word" })
+vim.keymap.set("n", "<c-u>", "viwU", { noremap = true, desc = "uppercase word" })
+vim.g.mapleader = " "
+vim.g.maplocalleader = ","
+
