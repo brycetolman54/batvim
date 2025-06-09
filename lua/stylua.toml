@@ -3,3 +3,4 @@ indent_width = 2
 line_endings = "Unix"
 quote_style = "AutoPreferDouble"
 syntax = "All"
+insert_final_newline = true
