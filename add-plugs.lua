@@ -22,11 +22,11 @@ for _, repo in ipairs(repos) do
   local target_path = config_dir .. "/" .. name
   local check = io.open(target_path, "r")
   if check then
-    print("Skipping (exists):", name, "\n")
+    io.write("\27[32mSkipping (exists): \27[0m", name, "\n")
     check:close()
   else
     local cmd = string.format("git clone https://github.com%s %s", path, target_path)
-    print("Cloning:", path, "\n")
+    io.write("\27[34mCloning: \27[0m", path, "\n")
     os.execute(cmd)
   end
 end

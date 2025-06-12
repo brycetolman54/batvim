@@ -6,7 +6,8 @@
     - All of my plugins (I will not use many) are stored in the `pack/plugins/start` directory
     - The `plug-lock.json` file shows all of the plugins that I am using
         - It shows the `user/repo` so you can clone them after you clone this repo
-    - I may add a script to clone them for you in the future
+    - You can run the `add-plugs.lua` script to clone these automatically (the commmand to run is in the bottom of that folder)
+    - In order to avoid having problems with that, I have used an `if-else` statement for any line of code that is used to configure a plugin
 
 - Here is the structure of my config:
 
