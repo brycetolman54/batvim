@@ -13,20 +13,49 @@
 
 ```plaintext
 ├── README.md
+├── add-plugs.lua
 ├── init.lua
 ├── lua
 │   ├── core
+│   │   ├── abbreviations
+│   │   │   ├── init.lua
+│   │   │   ├── markdown.lua
+│   │   │   ├── snippets
+│   │   │   └── typos.lua
 │   │   ├── commands
 │   │   │   ├── gruvbox.lua
+│   │   │   ├── indentation.lua
 │   │   │   └── init.lua
 │   │   ├── init.lua
 │   │   ├── keymaps
-│   │   │   └── init.lua
+│   │   │   ├── exit.lua
+│   │   │   ├── init.lua
+│   │   │   ├── navigation.lua
+│   │   │   ├── nop.lua
+│   │   │   ├── other.lua
+│   │   │   └── surround.lua
+│   │   ├── mine.ts
 │   │   └── options
+│   │       ├── command.lua
+│   │       ├── copy.lua
+│   │       ├── files.lua
+│   │       ├── fold.lua
 │   │       ├── gruvbox.lua
-│   │       └── init.lua
+│   │       ├── highlight.lua
+│   │       ├── indentation.lua
+│   │       ├── init.lua
+│   │       ├── list.lua
+│   │       ├── number.lua
+│   │       ├── other.lua
+│   │       ├── scroll.lua
+│   │       ├── search.lua
+│   │       ├── spell.lua
+│   │       └── wrap.lua
 │   ├── myplugs
 │   │   ├── check
+│   │   │   ├── init.lua
+│   │   │   └── rust.lua
+│   │   ├── diagnostic
 │   │   │   ├── init.lua
 │   │   │   └── rust.lua
 │   │   ├── format
@@ -34,12 +63,19 @@
 │   │   │   ├── lua.lua
 │   │   │   └── rust.lua
 │   │   └── init.lua
-│   └── stylua.toml
+│   ├── stylua.toml
+│   └── test.lua
+├── nvim-structure.md
 ├── pack
 │   └── plugins
 │       └── start
-│           └── gruvbox
+│           ├── gruvbox
+│           ├── noice
+│           ├── nui
+│           ├── plenary
+│           └── whichkey
 └── plug-lock.json
+
 ```
 <!--
 {

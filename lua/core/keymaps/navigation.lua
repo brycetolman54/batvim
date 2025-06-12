@@ -7,3 +7,9 @@ vim.keymap.set({ "n", "i" }, "<c-j>", "<c-w>j", { noremap = true, desc = "move d
 vim.keymap.set({ "n", "i" }, "<c-k>", "<c-w>k", { noremap = true, desc = "move up a window" })
 vim.keymap.set({ "n", "i" }, "<c-h>", "<c-w>h", { noremap = true, desc = "move left a window" })
 vim.keymap.set({ "n", "i" }, "<c-l>", "<c-w>l", { noremap = true, desc = "move right a window" })
+
+-- toggle terminal window
+vim.keymap.set({ "n", "i", "v" }, "ttm", function()
+  vim.cmd("bot 10split | terminal")
+  vim.cmd("startinsert")
+end, { noremap = true, desc = "open terminal mode" })

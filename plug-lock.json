@@ -1,5 +1,7 @@
 [
     ["gruvbox", "/morhetz/gruvbox"],
     ["whichkey", "/folke/which-key.nvim"],
-    ["noice", "/folke/noice.nvim"]
+    ["noice", "/folke/noice.nvim"],
+    ["plenary", "/nvim-lua/plenary.nvim"],
+    ["nui", "/MunifTanjim/nui.nvim"]
 ]
