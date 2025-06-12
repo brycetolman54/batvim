@@ -1,3 +1,4 @@
 {
-    "/morhetz/gruvbox"
+    "/morhetz/gruvbox",
+    "/folke/which-key.nvim"
 }

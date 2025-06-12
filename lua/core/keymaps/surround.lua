@@ -19,4 +19,4 @@ vim.keymap.set("v", "<leader>(", "<esc>`<i(<esc>`>a)<esc>", { noremap = true, de
 vim.keymap.set("v", "<leader>{", "<esc>`<i{<esc>`>a}<esc>", { noremap = true, desc = "add braces" })
 vim.keymap.set("v", "<leader>[", "<esc>`<i[<esc>`>a]<esc>", { noremap = true, desc = "add brackets" })
 vim.keymap.set("v", "<leader><", "<esc>`<i<<esc>`>a><esc>", { noremap = true, desc = "add angle brackets" })
-vim.keymap.set("v", "<leader><bs>", "<esc>`<a<bs><esc>`>i<del><esc>", { noremap = true, desc = "remove surrounding" })
+vim.keymap.set("v", "<leader><bs>", "<esc>`<a<bs><esc>`>a<bs><esc>", { noremap = true, desc = "remove surrounding" })
