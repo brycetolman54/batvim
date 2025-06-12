@@ -1,1 +1,5 @@
-vim.cmd("colorscheme gruvbox")
+if plugs then
+    vim.cmd("colorscheme gruvbox")
+else
+    return {}
+end

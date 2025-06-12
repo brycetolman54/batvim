@@ -1,3 +1,5 @@
+plugs = true
+
 require("core")
 require("myplugs")
 require("test")

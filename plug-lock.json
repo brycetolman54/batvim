@@ -1,4 +1,5 @@
-{
-    "/morhetz/gruvbox",
-    "/folke/which-key.nvim"
-}
+[
+    ["gruvbox", "/morhetz/gruvbox"],
+    ["whichkey", "/folke/which-key.nvim"],
+    ["noice", "/folke/noice.nvim"]
+]
