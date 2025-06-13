@@ -1,1 +1,0 @@
-require("myplugs.check.rust")

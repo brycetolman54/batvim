@@ -1,12 +1,11 @@
-# NeoVim Setup
+# BatMan
 
-- This is the neovim setup that I am using.
+- This is a repo that holds my NeoVim configuration, relying on Lua. 
+- I have created my own little package manager, which I have called `BatMan`
+
 - What to know:
-    - I am not using a plugin manager.
-    - All of my plugins (I will not use many) are stored in the `pack/plugins/start` directory
+    - All of my plugins are stored in the `pack/plugins/start` directory
     - The `plug-lock.json` file shows all of the plugins that I am using
-        - It shows the `user/repo` so you can clone them after you clone this repo
-    - You can run the `add-plugs.lua` script to clone these automatically (the commmand to run is in the bottom of that folder)
     - In order to avoid having problems with that, I have used an `if-else` statement for any line of code that is used to configure a plugin
 
 - Here is the structure of my config:

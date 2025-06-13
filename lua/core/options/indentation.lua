@@ -4,3 +4,4 @@ vim.opt.expandtab = true -- make tabs spaces
 vim.opt.shiftwidth = 4 -- number of spaces in an indent
 vim.opt.smartindent = true -- autoindent new lines based on syntax
 vim.opt.autoindent = true -- copies indent from previous line
+vim.cmd("filetype indent on") -- set indentation for a filetype

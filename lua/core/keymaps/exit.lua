@@ -1,5 +1,5 @@
 vim.keymap.set({ "i", "v" }, "jk", "<esc>", { noremap = true, desc = "exit to normal mode" })
-vim.keymap.set("t", "jk", "<c-\\><c-n>", { noremap = true, desc = "exit to normal mode" })
+vim.keymap.set("t", "jk", "<c-\\><c-n>:q<cr>", { noremap = true, desc = "exit to normal mode" })
 
 vim.keymap.set({ "i", "v" }, "<localleader>w", "<esc>:w<cr>", { noremap = true, desc = "save" })
 vim.keymap.set({ "i", "v" }, "<localleader>x", "<esc>:x<cr>", { noremap = true, desc = "save and exit" })
