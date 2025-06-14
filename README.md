@@ -1,4 +1,4 @@
-# BatMan
+# BatVim
 
 - This is a repo that holds my NeoVim configuration, relying on Lua. 
 - I have created my own little package manager, which I have called `BatMan`
