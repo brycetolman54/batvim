@@ -1,14 +1,25 @@
 # BatVim
 
-- This is a repo that holds my NeoVim configuration, relying on Lua. 
-- I have created my own little package manager, which I have called `BatMan`
+This is a repo that holds my NeoVim configuration, relying on Lua.
 
-- What to know:
-    - All of my plugins are stored in the `pack/plugins/start` directory
-    - The `plug-lock.json` file shows all of the plugins that I am using
-    - In order to avoid having problems with that, I have used an `if-else` statement for any line of code that is used to configure a plugin
+I have created my own little package manager, which I have called [BatMan](https://github.com/brycetolman54/batman/tree/main)
 
-- Here is the structure of my config:
+All of my plugins are stored in the `pack/plugins/start` directory
+
+If you would like to use this config, run the following:
+
+```sh
+git clone https://github.com/brycetolman54/batvim.git \
+~/.config
+
+cd ~/.config
+
+mv batvim nvim
+
+nvim
+```
+
+Here is the structure of my config:
 
 ```plaintext
 ├── README.md
