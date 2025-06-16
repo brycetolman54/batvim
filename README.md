@@ -24,7 +24,13 @@ nvim
 ```
 
 Here is the structure of my config:
-
+<!--
+{
+  echo '```plaintext'
+  tree ~/.config/nvim -L 4 | sed '1d;$d;$d'
+  echo '```'
+} >> README.md
+-->
 ```plaintext
 ├── README.md
 ├── init.lua
@@ -80,7 +86,6 @@ Here is the structure of my config:
 │   │   ├── notify.lua
 │   │   └── whichkey.lua
 │   └── start.lua
-├── nvim-structure.md
 ├── pack
 │   └── plugins
 │       └── start
@@ -95,11 +100,3 @@ Here is the structure of my config:
 └── stylua.toml
 
 ```
-
-<!--
-{
-  echo '```plaintext'
-  tree ~/.config/nvim -L 4 | sed '1d;$d;$d'
-  echo '```'
-} > nvim-structure.md
--->
