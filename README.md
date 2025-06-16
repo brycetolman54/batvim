@@ -27,7 +27,6 @@ Here is the structure of my config:
 
 ```plaintext
 ├── README.md
-├── add-plugs.lua
 ├── init.lua
 ├── lua
 │   ├── core
@@ -36,10 +35,6 @@ Here is the structure of my config:
 │   │   │   ├── markdown.lua
 │   │   │   ├── snippets
 │   │   │   └── typos.lua
-│   │   ├── commands
-│   │   │   ├── gruvbox.lua
-│   │   │   ├── indentation.lua
-│   │   │   └── init.lua
 │   │   ├── init.lua
 │   │   ├── keymaps
 │   │   │   ├── exit.lua
@@ -48,7 +43,6 @@ Here is the structure of my config:
 │   │   │   ├── nop.lua
 │   │   │   ├── other.lua
 │   │   │   └── surround.lua
-│   │   ├── mine.ts
 │   │   └── options
 │   │       ├── command.lua
 │   │       ├── copy.lua
@@ -65,7 +59,7 @@ Here is the structure of my config:
 │   │       ├── search.lua
 │   │       ├── spell.lua
 │   │       └── wrap.lua
-│   ├── myplugs
+│   ├── language
 │   │   ├── check
 │   │   │   ├── init.lua
 │   │   │   └── rust.lua
@@ -77,20 +71,31 @@ Here is the structure of my config:
 │   │   │   ├── lua.lua
 │   │   │   └── rust.lua
 │   │   └── init.lua
-│   ├── stylua.toml
-│   └── test.lua
+│   ├── setup
+│   │   ├── batman.lua
+│   │   ├── gruvbox.lua
+│   │   ├── init.lua
+│   │   ├── lualine.lua
+│   │   ├── noice.lua
+│   │   ├── notify.lua
+│   │   └── whichkey.lua
+│   └── start.lua
 ├── nvim-structure.md
 ├── pack
 │   └── plugins
 │       └── start
+│           ├── batman
 │           ├── gruvbox
+│           ├── lualine
 │           ├── noice
+│           ├── notify
 │           ├── nui
 │           ├── plenary
 │           └── whichkey
-└── plug-lock.json
+└── stylua.toml
 
 ```
+
 <!--
 {
   echo '```plaintext'
