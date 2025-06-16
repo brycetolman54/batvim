@@ -1,0 +1,1 @@
+require("language.check.rust")

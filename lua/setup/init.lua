@@ -1,0 +1,5 @@
+require("setup.lualine")
+require("setup.noice")
+require("setup.whichkey")
+require("setup.notify")
+require("setup.gruvbox")
