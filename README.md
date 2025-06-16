@@ -9,6 +9,9 @@ All of my plugins are stored in the `pack/plugins/start` directory
 If you would like to use this config, run the following:
 
 ```sh
+# if you have a config already, back it up with:
+# mv ~/.config/nvim ~/.config/nvim.bak
+
 git clone https://github.com/brycetolman54/batvim.git \
 ~/.config/nvim
 
