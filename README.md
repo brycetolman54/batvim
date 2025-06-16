@@ -12,6 +12,11 @@ If you would like to use this config, run the following:
 git clone https://github.com/brycetolman54/batvim.git \
 ~/.config/nvim
 
+git clone https://github.com/brycetolman54/batman.git \
+~/.config/nvim/pack/plugins/start/batman
+
+~/.config/nvim/pack/plugins/start/batman/setup.sh
+
 nvim
 ```
 
