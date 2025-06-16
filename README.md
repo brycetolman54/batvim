@@ -10,11 +10,7 @@ If you would like to use this config, run the following:
 
 ```sh
 git clone https://github.com/brycetolman54/batvim.git \
-~/.config
-
-cd ~/.config
-
-mv batvim nvim
+~/.config/nvim
 
 nvim
 ```
