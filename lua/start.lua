@@ -2,6 +2,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
     if #vim.v.argv <= 2 then
       vim.cmd("enew")
+      vim.api.nvim_buf_set_name(0, "Start")
       vim.bo.buflisted = false
       vim.bo.buftype = "nofile"
       vim.bo.swapfile = false
@@ -19,8 +20,8 @@ vim.api.nvim_create_autocmd("VimEnter", {
       vim.opt_local.signcolumn = "no"
       vim.opt_local.foldcolumn = "0"
 
-      vim.keymap.set("n", "e", ":e ", { buffer = 0 })
-      vim.keymap.set("n", "q", ":q!<cr>", { buffer = 0 })
+      vim.keymap.set("n", "e", ":e ", { noremap = true, buffer = 0 })
+      vim.keymap.set("n", "q", ":q!<cr>", { noremap = true, nowait = true, silent = true, buffer = 0 })
 
       local content = {
         "__________________                              __________________",

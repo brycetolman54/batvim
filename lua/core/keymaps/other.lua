@@ -8,3 +8,6 @@ vim.keymap.set("n", "<c-u>", "viwU", { noremap = true, desc = "uppercase word" }
 
 -- deleting
 vim.keymap.set("n", "da", "ggVGd", { noremap = true, desc = "delete all" })
+
+-- selecting
+vim.keymap.set("n", "sa", "ggVG", { noremap = true, desc = "select all" })
