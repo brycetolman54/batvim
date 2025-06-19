@@ -12,3 +12,5 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     end
   end,
 }) -- open file to previous location when closed
+
+vim.o.laststatus = 3 -- make the status line span splits

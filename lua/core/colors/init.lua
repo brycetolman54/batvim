@@ -1,0 +1,1 @@
+require("core.colors.terminal")
