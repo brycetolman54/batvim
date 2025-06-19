@@ -3,4 +3,8 @@ require("language")
 require("start")
 
 -- Load BatMan
-require("batman")
+require("batman").setup({
+  start = {
+    load = false,
+  },
+})
