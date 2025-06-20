@@ -1,6 +1,5 @@
 return {
   { name = "batman", repo = "brycetolman54/batman", setup = true },
-  { name = "plenary", repo = "nvim-lua/plenary.nvim", setup = false },
   { name = "gruvbox", repo = "morhetz/gruvbox", setup = true },
   { name = "whichkey", repo = "folke/which-key.nvim", setup = true },
   { name = "noice", repo = "folke/noice.nvim", setup = true },
