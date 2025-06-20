@@ -7,4 +7,5 @@ require("batman").setup({
   start = {
     load = false,
   },
+  delete = "rm -rf",
 })
