@@ -30,17 +30,15 @@ vim.keymap.set({ "n", "i", "v" }, "ttm", function()
   end
 end, { noremap = true, desc = "open terminal mode" })
 
--- close the term buffers
--- vim.api.nvim_create_autocmd("TermClose", {
---   pattern = "*",
---   callback = function()
---     for _, buf in ipairs(vim.api.nvim_list_bufs()) do
---       local name = vim.api.nvim_buf_get_name(buf)
---       if name:match("^term://") then
---         if vim.api.nvim_buf_is_valid(buf) then
---           vim.api.nvim_buf_delete(buf, { force = true })
---         end
---       end
---     end
---   end,
--- })
+-- delete the remaining buffer after I close the Terminal
+vim.api.nvim_create_autocmd("BufDelete", {
+  pattern = "Terminal",
+  callback = function()
+    for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+      local name = vim.api.nvim_buf_get_name(buf)
+      if name:match("^term://") and vim.api.nvim_buf_is_valid(buf) then
+        vim.api.nvim_buf_delete(buf, { force = true })
+      end
+    end
+  end,
+})
