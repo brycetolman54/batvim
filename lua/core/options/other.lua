@@ -1,6 +1,6 @@
 vim.opt.updatetime = 300 -- ms to hover or such before action
 vim.opt.timeoutlen = 500 -- ms allowed between keystrokes
-vim.opt.signcolumn = yes -- always show the sign column left of numbers
+vim.opt.signcolumn = "yes" -- always show the sign column left of numbers
 vim.opt.fillchars:append({ eob = " " }) -- char to use for lines after buffer
 
 vim.api.nvim_create_autocmd("BufReadPost", {
