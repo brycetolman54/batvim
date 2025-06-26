@@ -23,6 +23,14 @@ git clone https://github.com/brycetolman54/batman.git \
 nvim
 ```
 
+Ignore the error that pops up for you, then run:
+
+```vim
+:BatLoad
+```
+
+Exit and reopen neovim and you should be good to go.
+
 Here is the structure of my config:
 <!--
 {
