@@ -8,4 +8,6 @@ return {
   { name = "lualine", repo = "nvim-lualine/lualine.nvim", setup = true },
   { name = "barbar", repo = "romgrk/barbar.nvim", setup = true },
   { name = "dev-icons", repo = "nvim-tree/nvim-web-devicons", setup = false },
+  { name = "neo-tree", repo = "nvim-neo-tree/neo-tree.nvim", setup = true },
+  { name = "plenary", repo = "nvim-lua/plenary.nvim", setup = false },
 }
