@@ -49,6 +49,9 @@ Here is the structure of my config:
 │   │   │   ├── markdown.lua
 │   │   │   ├── snippets
 │   │   │   └── typos.lua
+│   │   ├── colors
+│   │   │   ├── init.lua
+│   │   │   └── terminal.lua
 │   │   ├── init.lua
 │   │   ├── keymaps
 │   │   │   ├── exit.lua
@@ -56,7 +59,8 @@ Here is the structure of my config:
 │   │   │   ├── navigation.lua
 │   │   │   ├── nop.lua
 │   │   │   ├── other.lua
-│   │   │   └── surround.lua
+│   │   │   ├── surround.lua
+│   │   │   └── terminal.lua
 │   │   └── options
 │   │       ├── command.lua
 │   │       ├── copy.lua
@@ -86,10 +90,12 @@ Here is the structure of my config:
 │   │   │   └── rust.lua
 │   │   └── init.lua
 │   ├── setup
+│   │   ├── barbar.lua
 │   │   ├── batman.lua
 │   │   ├── gruvbox.lua
 │   │   ├── init.lua
 │   │   ├── lualine.lua
+│   │   ├── neo-tree.lua
 │   │   ├── noice.lua
 │   │   ├── notify.lua
 │   │   └── whichkey.lua
@@ -97,9 +103,12 @@ Here is the structure of my config:
 ├── pack
 │   └── plugins
 │       └── start
+│           ├── barbar
 │           ├── batman
+│           ├── dev-icons
 │           ├── gruvbox
 │           ├── lualine
+│           ├── neo-tree
 │           ├── noice
 │           ├── notify
 │           ├── nui
