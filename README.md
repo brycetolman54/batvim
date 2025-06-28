@@ -10,18 +10,22 @@ If you would like to use this config, run the following:
 
 ```sh
 # if you have a config already, back it up with:
-# mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.config/nvim ~/.config/nvim.bak
 
+# clone this repo
 git clone --quiet \
 https://github.com/brycetolman54/batvim.git \
 ~/.config/nvim
 
+# clone my package manager
 git clone --quiet\
 https://github.com/brycetolman54/batman.git \
 ~/.config/nvim/pack/plugins/start/batman
 
+# run the package manager setup script
 ~/.config/nvim/pack/plugins/start/batman/setup.sh
 
+# start neovim
 nvim
 ```
 
