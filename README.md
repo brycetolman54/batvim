@@ -12,11 +12,11 @@ If you would like to use this config, run the following:
 # if you have a config already, back it up with:
 # mv ~/.config/nvim ~/.config/nvim.bak
 
-git clone https://github.com/brycetolman54/batvim.git \
-~/.config/nvim > /dev/null
+git clone --quiet https://github.com/brycetolman54/batvim.git \
+~/.config/nvim
 
-git clone https://github.com/brycetolman54/batman.git \
-~/.config/nvim/pack/plugins/start/batman > /dev/null
+git clone --quiet https://github.com/brycetolman54/batman.git \
+~/.config/nvim/pack/plugins/start/batman
 
 ~/.config/nvim/pack/plugins/start/batman/setup.sh
 
