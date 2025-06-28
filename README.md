@@ -23,7 +23,7 @@ git clone https://github.com/brycetolman54/batman.git \
 nvim
 ```
 
-Ignore the error that pops up for you, then run:
+Then run this command inside of NeoVim:
 
 ```vim
 :BatLoad
