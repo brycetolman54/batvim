@@ -46,6 +46,7 @@ Here is the structure of my config:
 } >> README.md
 -->
 ```plaintext
+├── GEMINI.md
 ├── README.md
 ├── init.lua
 ├── lua
@@ -99,7 +100,6 @@ Here is the structure of my config:
 │   │   ├── barbar.lua
 │   │   ├── batman.lua
 │   │   ├── gruvbox.lua
-│   │   ├── init.lua
 │   │   ├── lualine.lua
 │   │   ├── neo-tree.lua
 │   │   ├── noice.lua
