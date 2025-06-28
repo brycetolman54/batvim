@@ -1,1 +1,3 @@
-vim.cmd("colorscheme gruvbox")
+vim.schedule(function()
+	vim.cmd("colorscheme gruvbox")
+end)
