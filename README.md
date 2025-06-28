@@ -18,7 +18,7 @@ https://github.com/brycetolman54/batvim.git \
 ~/.config/nvim
 
 # clone my package manager
-git clone --quiet\
+git clone --quiet \
 https://github.com/brycetolman54/batman.git \
 ~/.config/nvim/pack/plugins/start/batman
 
