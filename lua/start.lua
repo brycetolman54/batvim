@@ -35,6 +35,12 @@ vim.api.nvim_create_autocmd("VimEnter", {
       vim.opt_local.signcolumn = "no"
       vim.opt_local.foldcolumn = "0"
 
+      -- set the color
+      vim.schedule(function()
+        vim.opt_local.winhighlight = "Normal:StartDark"
+        vim.cmd("hi StartDark guibg=#000000")
+      end)
+
       -- set the commands keys to use
       vim.keymap.set("n", "e", ":e ", { noremap = true, buffer = 0 })
       vim.keymap.set("n", "q", ":q!<cr>", { noremap = true, nowait = true, silent = true, buffer = 0 })
