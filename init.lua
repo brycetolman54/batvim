@@ -3,9 +3,4 @@ require("language")
 require("start")
 
 -- Load BatMan
-require("batman").setup({
-  start = {
-    load = false,
-  },
-  delete = "rm -rf",
-})
+require("batman").setup({})
