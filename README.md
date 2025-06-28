@@ -13,10 +13,10 @@ If you would like to use this config, run the following:
 # mv ~/.config/nvim ~/.config/nvim.bak
 
 git clone https://github.com/brycetolman54/batvim.git \
-~/.config/nvim
+~/.config/nvim > /dev/null
 
 git clone https://github.com/brycetolman54/batman.git \
-~/.config/nvim/pack/plugins/start/batman
+~/.config/nvim/pack/plugins/start/batman > /dev/null
 
 ~/.config/nvim/pack/plugins/start/batman/setup.sh
 
