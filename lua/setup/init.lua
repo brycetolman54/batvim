@@ -1,8 +1,0 @@
-require("setup.barbar")
-require("setup.batman")
-require("setup.gruvbox")
-require("setup.lualine")
-require("setup.noice")
-require("setup.notify")
-require("setup.whichkey")
-require("setup.neo-tree")
