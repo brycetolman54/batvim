@@ -1,4 +1,12 @@
 vim.opt.foldmethod = "syntax" -- fold based on indents
+vim.api.nvim_create_autocmd("VimEnter", {
+  callback = function()
+    if vim.fn.expand("%:t") == ".bashrc" then
+      vim.opt.foldmethod = "marker"
+      vim.opt.foldmarker = "-{,}-"
+    end
+  end,
+})
 vim.opt.foldcolumn = "1" -- show foldmarkers in the sign column
 vim.opt.fillchars:append({
   fold = " ",
@@ -12,5 +20,5 @@ vim.opt.foldtext = "v:lua.my_fold_text()" -- text to show a collapsed fold
 function _G.my_fold_text()
   local start_line = vim.fn.getline(vim.v.foldstart)
   local end_line = vim.v.foldend - vim.v.foldstart + 1
-  return start_line .. "  <- " .. end_line .. " lines ->"
+  return "<- " .. end_line .. "L ->  " .. start_line
 end
